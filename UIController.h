@@ -1,10 +1,14 @@
 #import <Foundation/Foundation.h>
 
-@interface MainUIController : NSObject{
-    IBOutlet id accumatorDisplay;
+@interface UIController : NSObject{
+    IBOutlet id input;
+    IBOutlet id result` ;
 }
 
--(IBAction)Number1Pressed:(id)sender;
+-(IBAction)setUnitToFromCtoF:(id)sender;
+-(IBAction)setUnitToFromFtoC:(id)sender;
+-(IBAction)convert:(id)sender;
+
 
 
 
