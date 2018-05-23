@@ -7,6 +7,7 @@
 @interface UIController : NSObject{
     IBOutlet id inputField;
     IBOutlet id resultDisplay;
+    string unit;
 }
 
 -(IBAction)setUnitToFromCtoF:(id)sender;
