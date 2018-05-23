@@ -7,10 +7,13 @@
 @implementation UnitConvertor
 
 -(double)convertToCFromFtemperature:(double) input{
-
+  double C = 5/9*(input-32);
+  return C;
 }
 -(double)convertToFFromCtemperature:(double) input{
-
+  double F = 9/5*input+32;
+    return F;
 }
+
 
 @end
