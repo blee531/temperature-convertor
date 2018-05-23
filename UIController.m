@@ -7,15 +7,20 @@
 @implementation Fraction
 
 -(IBAction)setUnitToFromCtoF:(id)sender{
-  
+  unit = "from C to F";
 }
 
 -(IBAction)setUnitToFromFtoC:(id)sender{
-  
+  unit = "from F to C";
 }
 
 -(IBAction)convert:(id)sender{
-  
+  UnitConvertor
+  if(unit == "from C to F"){
+    
+  }else{
+    
+  }
 }
 
 @end
