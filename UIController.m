@@ -15,12 +15,11 @@
 }
 
 -(IBAction)convert:(id)sender{
-  UnitConvertor converter;
-    
+  UnitConvertor * converter = [[UnitConvertor alloc] init];
   if(unit == "from C to F"){
-    setUnitToF;
+    
   }else{
-    setUnitToC;
+    
   }
 }
 
