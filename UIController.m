@@ -5,6 +5,10 @@
 #import "Fraction.h"
 
 @implementation Fraction
+  
+-(void)updateResultDisplayTo:(double) result{
+  [resultDisplay setFloatValue:(float)result];
+}
 
 -(IBAction)setUnitToFromCtoF:(id)sender{
   unit = "from C to F";
@@ -16,10 +20,11 @@
 
 -(IBAction)convert:(id)sender{
   UnitConvertor * converter = [[UnitConvertor alloc] init];
+  double inputNumber = [inputField doubleValue];
   if(unit == "from C to F"){ //convert C to F
-    
+    [self updateResultDisplayTo:[converter convertToFFromCtemperature:inputNumber]];
   }else{
-    
+    [self updateResultDisplayTo:[converter convertToCFromFtemperature:inputNumber]];
   }
 }
 
