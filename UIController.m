@@ -2,9 +2,9 @@
 //Project:Temperature Convertor
 //FileName:UIController.m
 
-#import "Fraction.h"
+#import "UIController.h"
 
-@implementation Fraction
+@implementation UIController
   
 -(void)updateResultDisplayTo:(double) result{
   [resultDisplay setFloatValue:(float)result];
