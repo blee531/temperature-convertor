@@ -5,11 +5,13 @@
 #import <Foundation/Foundation.h>
 
 @interface UIController : NSObject{
+@private
     IBOutlet id inputField;
     IBOutlet id resultDisplay;
     string unit;
 }
 
+-(void)updateResultDisplayTo:(double) result;
 -(IBAction)setUnitToFromCtoF:(id)sender;
 -(IBAction)setUnitToFromFtoC:(id)sender;
 -(IBAction)convert:(id)sender;
